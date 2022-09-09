@@ -1,0 +1,2 @@
+DIS     = "countries/Disney.txt"
+KOS	= "countries/Kosovo.txt"

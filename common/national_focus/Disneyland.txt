@@ -1,0 +1,2285 @@
+focus_tree = {
+	id = Disneyland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DIS
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 70 y = 1100 }
+
+	focus = {
+		id = The_Disney_Police
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 2
+		y = 1
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Project_Dumbo
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		x = 6
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Project_Castaway
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		x = 10
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Hire_Contractors
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		x = 15
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = Our_Constitution
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		x = 25
+		y = 1
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = Operation_Paperclip
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		x = 21
+		y = 1
+		available = {
+			GER = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+		completion_reward = {
+
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = wernher_von_braun
+			show_ideas_tooltip = werner_heisenberg
+			
+		}
+	}
+	focus = {
+		id = Wartime_Propoganda
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		x = 29
+		y = 1
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = Axis_Science
+		icon = GFX_focus_research
+		cost = 10.00
+		mutually_exclusive = {
+			focus = Iwerks_Studio_Police
+		}
+		prerequisite = {
+			focus = Forced_Independence
+		}
+		x = 29
+		y = 6
+		completion_reward = {
+			add_ideas = axis_science
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = More_Democratic
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = Focuses_Planned
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = Revolvers_and_Ray_Guns
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = The_Disney_Police
+		}
+		x = 1
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = Cannons_and_Grenades
+		icon = GFX_goal_generic_army_artillery
+		cost = 10.00
+		prerequisite = {
+			focus = Revolvers_and_Ray_Guns
+		}
+		x = 1
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = Mickey_Artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = Cannons_and_Grenades
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = War_Doctorine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = The_Disney_Police
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Strategic_Planning
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = War_Doctorine
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Red_Cross_Wagons
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = The_Disney_Police
+		}
+		x = 3
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+	focus = {
+		id = Armored_Roadrunners
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = Red_Cross_Wagons
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = Landships
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = Armored_Roadrunners
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = Warfare_Imagineers
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = Strategic_Planning
+		}
+		prerequisite = {
+			focus = Landships
+		}
+		prerequisite = {
+			focus = Mickey_Artillery
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+	focus = {
+		id = Barnstormers
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = Project_Dumbo
+		}
+		mutually_exclusive = {
+			focus = BarnBusters
+		}
+		x = 5
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+
+	}
+	focus = {
+		id = BarnBusters
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = Project_Dumbo
+		}
+		mutually_exclusive = {
+			focus = Barnstormers
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = TreeTrimmers
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = Red_Cross_Wagons
+			focus = Barnstormers
+			focus = BarnBusters
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = New_Plane_Designs
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = BarnBusters
+			focus = Barnstormers
+		}
+		x = 6
+		y = 3
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							NOT = { is_controlled_by = ROOT }
+							NOT = {
+								free_building_slots = {
+									building = air_base
+									size > 1
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}				
+					ROOT = { set_country_flag = aviation_effort_2_AB }
+				}
+			}
+			add_tech_bonus = {
+				name =  air_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = Fowler_Harbour
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		prerequisite = {
+			focus = Project_Castaway
+		}
+		mutually_exclusive = {
+			focus = Irving_Fleet
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	focus = {
+		id = PB_J_Catalina
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = Fowler_Harbour
+			focus = BarnBusters
+			focus = Barnstormers
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = Irving_Fleet
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = Project_Castaway
+		}
+		mutually_exclusive = {
+			focus = Fowler_Harbour
+		}
+		x = 11
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = Twenty_Leagues
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = Irving_Fleet
+			focus = Fowler_Harbour
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = Steel_Krackens
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
+		prerequisite = {
+			focus = Twenty_Leagues
+		}
+		x = 9
+		y = 4
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = Modern_Keelboats
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = Irving_Fleet
+			focus = Fowler_Harbour
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = Floating_Wonders
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = Modern_Keelboats
+		}
+		x = 11
+		y = 4
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = Order_More_Lumber
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Hire_Contractors
+		}
+		x = 13
+		y = 2
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Order_More_Steel
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Order_More_Lumber
+		}
+		x = 13
+		y = 3
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Disneyland_Railway
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = Order_More_Steel
+		}
+		x = 13
+		y = 4
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RocketRods
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = New_Plane_Designs
+		}
+		prerequisite = {
+			focus = Disneyland_Railway
+		}
+		x = 6
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = The_Monorail
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = Disneyland_Railway
+		}
+		x = 13
+		y = 5
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Too_Much_TNT
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = The_Monorail
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = Tomorrowland_Vision
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = The_Monorail
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = Corporate_Sponsors
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = Tomorrowland_Vision
+		}
+		available = {
+			num_of_factories > 50
+		}
+		x = 13
+		y = 7
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = Donald_Duck_Munitions
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Hire_Contractors
+		}
+		x = 15
+		y = 2
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ACME_Co.
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Donald_Duck_Munitions
+		}
+		x = 15
+		y = 3
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Elmer_Fudd_Rifle_Co.
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = ACME_Co.
+		}
+		x = 15
+		y = 4
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Aluminum_Experiment
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Disneyland_Railway
+		}
+		x = 15
+		y = 5
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = The_Disney_Vault
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = The_Monorail
+		}
+		x = 15
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = Disneyland_Park
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = Hire_Contractors
+		}
+		x = 17
+		y = 2
+		completion_reward = {
+			807 = {
+				add_manpower = 50000
+			}
+		}
+	}
+	focus = {
+		id = Disneyland_Hotel
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = Disneyland_Park
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+			807 = {
+				add_manpower = 100000
+			}
+		}
+	}
+	focus = {
+		id = Fireworks_Shows
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = Disneyland_Hotel
+		}
+		x = 17
+		y = 4
+		completion_reward = {
+			807 = {
+				add_manpower = 150000
+			}
+		}
+	}
+	focus = {
+		id = Cast_Member_Housing
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = Fireworks_Shows
+		}
+		x = 17
+		y = 5
+		completion_reward = {
+			807 = {
+				add_manpower = 200000
+			}
+		}
+	}
+	focus = {
+		id = Establish_WED
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = Cast_Member_Housing
+			focus = The_Monorail
+		}
+		x = 17
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = wed
+		}
+
+	}
+	focus = {
+		id = Company_President
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = Our_Constitution
+		}
+		mutually_exclusive = {
+			focus = King_of_the_Castle
+			focus = Iwerks_Studio
+			focus = Are_We_Men
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+			add_ideas = democratic_influence
+			if = {
+				limit = { 
+					NOT = {
+						has_government = democratic
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+		}
+	}
+	focus = {
+		id = Allied_Support
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = Company_President
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = Happy_Shareholders
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = Allied_Support
+		}
+		x = 19
+		y = 5
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = Corporate_Independence
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = Happy_Shareholders
+		}
+		mutually_exclusive = {
+			focus = FBI_Informant
+		}
+		x = 19
+		y = 7
+		bypass = {
+			NOT = {
+				is_subject = yes
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				OVERLORD = {
+					set_autonomy = {
+						target = DIS
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = King_of_the_Castle
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = Our_Constitution
+		}
+		mutually_exclusive = {
+			focus = Iwerks_Studio
+			focus = Company_President
+			focus = Are_We_Men
+		}
+		x = 23
+		y = 2
+		completion_reward = {
+			add_ideas = neutrality_influence
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+	}
+	focus = {
+		id = Media_Personality
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = Company_President
+			focus = King_of_the_Castle
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+			807 = {
+				add_manpower = 500000
+			}
+		}
+
+	}
+	focus = {
+		id = Disney_Channel
+		icon = GFX_goal_generic_radar
+		cost = 10.00
+		prerequisite = {
+			focus = Media_Personality
+		}
+		x = 21
+		y = 4
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = The_Florida_Project
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = Disney_Channel
+		}
+		x = 21
+		y = 5
+		completion_reward = {
+			transfer_state = 808
+		}
+
+	}
+	focus = {
+		id = Virginia_Park
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		prerequisite = {
+			focus = The_Florida_Project
+		}
+		x = 21
+		y = 6
+		completion_reward = {
+			transfer_state = 809
+		}
+
+	}
+	focus = {
+		id = FBI_Informant
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = Happy_Shareholders
+		}
+		mutually_exclusive = {
+			focus = Corporate_Independence
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+			add_ideas = fbi_informant
+		}
+
+	}
+	focus = {
+		id = Happiest_Place_On_Earth
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = King_of_the_Castle
+		}
+		x = 23
+		y = 3
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = The_Royal_Guard
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = Happiest_Place_On_Earth
+		}
+		x = 23
+		y = 4
+		completion_reward = {
+			hidden_effect = {
+				division_template = {
+					name = "Royal Guard"
+					division_names_group = USA_ARM_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+			}
+			custom_effect_tooltip = tooltip_royal_guard
+		}
+	}
+	focus = {
+		id = Castle_Expansion
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = The_Royal_Guard
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 11757
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 7517
+				instant_build = yes
+			}
+		}
+	}
+	focus = {
+		id = Mickeys_Flagship
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = Castle_Expansion
+		}
+		x = 23
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = Merchandising_Efforts
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = Mickeys_Flagship
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+			hidden_effect = {
+				add_ideas = merchandising_efforts
+			}
+			show_ideas_tooltip = merchandising_efforts
+
+		}
+
+	}
+	focus = {
+		id = Pro_US_Propoganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = FBI_Informant
+			focus = Merchandising_Efforts
+		}
+		mutually_exclusive = {
+			focus = Leave_The_US
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+			USA = {
+				add_opinion_modifier = {
+					target = DIS
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Leave_The_US
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = Merchandising_Efforts
+		}
+		mutually_exclusive = {
+			focus = Pro_US_Propoganda
+		}
+		x = 23
+		y = 8
+		completion_reward = {
+			if = {
+				limit = { is_puppet = yes }
+				USA = {
+					end_puppet = DIS
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Monarchist_Union
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = Leave_The_US
+		}
+		x = 23
+		y = 9
+		completion_reward = {
+			custom_effect_tooltip = monarchist_union_tooltip
+			set_rule = {
+				can_create_factions = yes
+			}
+			every_country = {
+				if = {
+					limit = {
+						has_government = neutrality
+					}
+					add_opinion_modifier = {
+						target = DIS
+						modifier = medium_increase
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Iwerks_Studio
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = Our_Constitution
+		}
+		mutually_exclusive = {
+			focus = Are_We_Men
+			focus = King_of_the_Castle
+			focus = Company_President
+		}
+		x = 27
+		y = 2
+		completion_reward = {
+			set_politics = {ruling_party = fascism elections_allowed = no}
+		}
+
+	}
+	focus = {
+		id = Future_Monarchist_Path
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Iwerks_Studio
+			focus = King_of_the_Castle
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = Scariest_Place_On_Earth
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		prerequisite = {
+			focus = Iwerks_Studio
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+		}
+
+	}
+	focus = {
+		id = Mickey_Mouse_Club
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = Scariest_Place_On_Earth
+		}
+		x = 27
+		y = 4
+		completion_reward = {
+			USA = {
+				add_ideas = fascist_influence
+			}
+			ENG = {
+				add_ideas = fascist_influence
+			}
+		}
+
+	}
+	focus = {
+		id = Forced_Independence
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = Mickey_Mouse_Club
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+			if = {
+				limit = { is_puppet = yes }
+				USA = {
+					end_puppet = DIS
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Iwerks_Studio_Police
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = Forced_Independence
+		}
+		mutually_exclusive = {
+			focus = Axis_Science
+		}
+		x = 27
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = tooltip_studio_police
+			division_template = {
+				name = "Studio Police"
+			
+				division_names_group = USA_ARM_01
+			
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+				}
+				priority = 2
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+			}
+		}
+
+
+	}
+	focus = {
+		id = The_Greater_Cause
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = Iwerks_Studio_Police
+		}
+		x = 27
+		y = 7
+		completion_reward = {
+			add_war_support = 0.15
+		}
+
+	}
+	focus = {
+		id = American_Liberation
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = The_Greater_Cause
+		}
+		x = 27
+		y = 8
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = USA } 
+		}
+
+	}
+	focus = {
+		id = American_Ambitions
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = American_Liberation
+		}
+		x = 27
+		y = 10
+		completion_reward = {
+			annex_country = { target = USA transfer_troops = yes }
+		}
+
+	}
+	focus = {
+		id = V2_Rocketry_Cooperation
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = Axis_Science
+		}
+		x = 29
+		y = 7
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
+		}
+
+	}
+	focus = {
+		id = German_Advisors
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = V2_Rocketry_Cooperation
+		}
+		x = 29
+		y = 8
+		completion_reward = {
+			custom_effect_tooltip = available_theorist
+			show_ideas_tooltip = wernher_von_braun
+			show_ideas_tooltip = werner_heisenberg
+		}
+
+	}
+	focus = {
+		id = Embrace_Nazism
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = German_Advisors
+			focus = American_Liberation
+		}
+		x = 28
+		y = 9
+		completion_reward = {
+			GER = {
+				add_to_faction = DIS
+			}
+		}
+
+	}
+	focus = {
+		id = Visit_From_Hitler
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = German_Advisors
+		}
+		x = 29
+		y = 10
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = DIS
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Mickey_Mause_Klub
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = Visit_From_Hitler
+		}
+		x = 29
+		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = Are_We_Men
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = Our_Constitution
+		}
+		mutually_exclusive = {
+			focus = Iwerks_Studio
+			focus = Company_President
+			focus = King_of_the_Castle
+		}
+		x = 31
+		y = 2
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.8
+			}
+		}
+
+	}
+	focus = {
+		id = Or_Are_We_Mice
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = Are_We_Men
+		}
+		x = 31
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = tooltip_unionists
+			division_template = {
+				name = "Unionists"
+				division_names_group = USA_ARM_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Unionists\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Unionists\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 807 }
+					create_unit = {
+						division = "division_template = \"Unionists\" start_experience_factor = 0.1"
+						owner = DIS
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = The_Great_Strike
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = Or_Are_We_Mice
+		}
+		x = 31
+		y = 4
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+			}
+			add_stability = -0.1
+		}
+
+	}
+	focus = {
+		id = Which_Communism
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = The_Great_Strike
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+			country_event = disneyland.1
+		}
+
+	}
+	focus = {
+		id = Our_New_Union
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+			focus = Which_Communism
+		}
+		mutually_exclusive = {
+			focus = Our_Soviet_Brothers
+			focus = Our_Chinese_Friends
+		}
+		x = 31
+		y = 6
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.8
+			}
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+
+	}
+	focus = {
+		id = Red_Propoganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = Our_New_Union
+		}
+		x = 31
+		y = 7
+		completion_reward = {
+			USA = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.25
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Our_Soviet_Brothers
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = Which_Communism
+		}
+		mutually_exclusive = {
+			focus = Our_New_Union
+			focus = Our_Chinese_Friends
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = DIS
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = Interest_Seizure
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = Corporate_Independence
+		}
+		available = {
+			USA = {
+				has_opinion = {
+				  target = ROOT
+				  value > 99
+				}
+			  }
+		}
+		x = 19
+		y = 12
+		completion_reward = {
+			DIS = { puppet = USA }
+		}
+
+	}
+	focus = {
+		id = Kick_the_Commies
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = Pro_US_Propoganda
+		}
+		x = 21
+		y = 9
+		completion_reward = {
+			show_ideas_tooltip = kick_out_the_commies
+			hidden_effect = {
+				add_ideas = kick_out_the_commies
+			}
+		}
+
+	}
+	focus = {
+		id = Run_For_President
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = Kick_the_Commies
+		}
+		available = {
+			USA = {
+				has_elections = yes
+			}
+		}
+		x = 21
+		y = 10
+		completion_reward = {
+			annex_country = { target = USA transfer_troops = yes }
+		}
+
+	}
+	focus = {
+		id = The_Fuhrer's_New_Kingdom
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = Mickey_Mause_Klub
+		}
+		x = 29
+		y = 12
+		completion_reward = {
+			GER = { puppet = DIS }
+		}
+
+	}
+	focus = {
+		id = Our_Chinese_Friends
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10.00
+		prerequisite = {
+			focus = Which_Communism
+		}
+		mutually_exclusive = {
+			focus = Our_Soviet_Brothers
+			focus = Our_New_Union
+		}
+		x = 35
+		y = 6
+		completion_reward = {
+			PRC = {
+				add_opinion_modifier = {
+					target = DIS
+					modifier = medium_increase
+				}
+			}
+		}
+
+	}
+}

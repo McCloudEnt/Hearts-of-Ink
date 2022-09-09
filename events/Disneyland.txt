@@ -1,0 +1,51 @@
+add_namespace = disneyland
+
+country_event = {
+	id = disneyland.1
+	title = disneyland.1.t
+	desc = disneyland.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+
+	option = {
+		name = disneyland.1.a
+		ai_chance = { factor = 25 }
+		USA = {
+			add_opinion_modifier = {
+				target = DIS
+				modifier = chose_our_communism
+			}
+		}
+	}
+	option = {
+		name = disneyland.1.b
+		ai_chance = { factor = 25 }
+		FRA = {
+			add_opinion_modifier = {
+				target = DIS
+				modifier = chose_our_communism
+			}
+		}
+	}
+	option = {
+		name = disneyland.1.c
+		ai_chance = { factor = 25 }
+		PRC = {
+			add_opinion_modifier = {
+				target = DIS
+				modifier = chose_our_communism
+			}
+		}
+	}
+	option = {
+		name = disneyland.1.e
+		ai_chance = { factor = 25 }
+		SOV = {
+			add_opinion_modifier = {
+				target = DIS
+				modifier = chose_our_communism
+			}
+		}
+	}
+}

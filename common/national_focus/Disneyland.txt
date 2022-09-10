@@ -1257,7 +1257,7 @@ focus_tree = {
 		x = 17
 		y = 2
 		completion_reward = {
-			807 = {
+			835 = {
 				add_manpower = 50000
 			}
 		}
@@ -1272,7 +1272,7 @@ focus_tree = {
 		x = 17
 		y = 3
 		completion_reward = {
-			807 = {
+			835 = {
 				add_manpower = 100000
 			}
 		}
@@ -1287,7 +1287,7 @@ focus_tree = {
 		x = 17
 		y = 4
 		completion_reward = {
-			807 = {
+			835 = {
 				add_manpower = 150000
 			}
 		}
@@ -1302,7 +1302,7 @@ focus_tree = {
 		x = 17
 		y = 5
 		completion_reward = {
-			807 = {
+			835 = {
 				add_manpower = 200000
 			}
 		}
@@ -1438,7 +1438,7 @@ focus_tree = {
 		x = 21
 		y = 3
 		completion_reward = {
-			807 = {
+			835 = {
 				add_manpower = 500000
 			}
 		}
@@ -1549,7 +1549,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1557,7 +1557,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1565,7 +1565,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1573,7 +1573,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1581,7 +1581,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Royal Guard\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1846,7 +1846,7 @@ focus_tree = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1854,7 +1854,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1862,7 +1862,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
 						owner = DIS
@@ -1870,7 +1870,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Studio Police\" start_experience_factor = 0.1"
 						owner = DIS
@@ -2068,7 +2068,7 @@ focus_tree = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Unionists\" start_experience_factor = 0.1"
 						owner = DIS
@@ -2076,7 +2076,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Unionists\" start_experience_factor = 0.1"
 						owner = DIS
@@ -2084,7 +2084,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 807 }
+					prioritize = { 835 }
 					create_unit = {
 						division = "division_template = \"Unionists\" start_experience_factor = 0.1"
 						owner = DIS

@@ -4,8 +4,8 @@ tags={
 	"National Focuses"
 	"Gameplay"
 }
-path="C:/Users/b/Documents/Paradox Interactive/Hearts of Iron IV/mod/Hearts-of-Ink/"
-name="Hearts of Ink - GitHub Build"
+name="Hearts of Ink"
 picture="thumbnail.png"
 supported_version="1.11.*"
+path="C:/Users/b/Documents/Paradox Interactive/Hearts of Iron IV/mod/Hearts-of-Ink"
 remote_file_id="2506530652"

@@ -4,7 +4,7 @@ tags={
 	"National Focuses"
 	"Gameplay"
 }
-name="Hearts of Ink - GitHub Build"
+name="Hearts of Ink"
 picture="thumbnail.png"
 supported_version="1.11.*"
 remote_file_id="2506530652"

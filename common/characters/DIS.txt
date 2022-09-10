@@ -1,0 +1,387 @@
+characters = {
+	DIS_ub_iwerks = {
+		name = "Ub Iwerks"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DIS/portrait_Disney_ub_iwerks.dds"
+			}
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1971.7.7.12"
+			traits = {}
+			id = -1
+			desc = POLITICS_UB_IWERKS_DESC
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_ub_iwerks
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				fascist_demagogue
+			}
+		}
+	}
+	DIS_art_babbitt = {
+		name = "Art Babbitt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DIS/portrait_Disney_art_babbitt.dds"
+			}
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1992.3.4.12"
+			traits = {}
+			id = -1
+			desc = POLITICS_ART_BABBITT_DESC
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_art_babbitt
+			allowed = {
+				original_tag = DIS
+			}
+			available = {
+				NOT = {
+					has_completed_focus = Kick_the_Commies
+				}
+			}
+			traits = {
+				communist_revolutionary
+			}
+		}
+	}
+	DIS_les_clark = {
+		name = "Les Clark"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_les_clark
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				ideological_crusader
+			}
+		}
+	}
+	DIS_marc_davis = {
+		name = "Marc Davis"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_marc_davis
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				staunch_monarchist
+			}
+		}
+	}
+	DIS_milt_kahl = {
+		name = "Milt Kahl"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_milt_kahl
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+		}
+	}
+	DIS_eric_larson = {
+		name = "Eric Larson"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_eric_larson
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				backroom_backstabber
+			}
+		}
+	}
+	DIS_john_lounsbery = {
+		name = "John Lounsbery"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_john_lounsbery
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	DIS_carl_barks = {
+		name = "Carl Barks"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_carl_barks
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+	DIS_sherman_bros = {
+		name = "Sherman Brothers"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_sherman_bros
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+		}
+	}
+	DIS_mary_blair = {
+		name = "Mary Blair"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_mary_blair
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+	}
+	DIS_ollie_johnston = {
+		name = "Ollie Johnston"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_ollie_johnston
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	DIS_ward_kimball = {
+		name = "Ward Kimball"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_ward_kimball
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+		}
+	}
+	DIS_herb_ryman = {
+		name = "Herb Ryman"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_herb_ryman
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				backroom_backstabber
+			}
+		}
+	}
+	DIS_john_hench = {
+		name = "John Hench"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_john_hench
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	DIS_roger_broggie = {
+		name = "Roger Broggie"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_roger_broggie
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	DIS_jimmie_dodd = {
+		name = "Jimmie Dodd"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_jimmie_dodd
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+	DIS_floyd_gottfredson = {
+		name = "Floyd Gottfredson"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_floyd_gottfredson
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+	DIS_ken_anderson = {
+		name = "Ken Anderson"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_ken_anderson
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				quartermaster_general
+			}
+		}
+	}
+	DIS_jack_kinney = {
+		name = "Jack Kinney"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_jack_kinney
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	DIS_ronald_reagan = {
+		name = "Ronald Reagan"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_ronald_reagan
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				democratic_reformer
+			}
+		}
+	}
+}

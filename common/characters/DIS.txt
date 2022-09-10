@@ -1,4 +1,26 @@
 characters = {
+	DIS_walt_disney = {
+		name = "Walt Disney"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DIS/portrait_Disney_walt_disney.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1966.12.5.12"
+			traits = {}
+			id = -1
+			desc = POLITICS_WALT_DISNEY_DEM_DESC
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1966.12.5.12"
+			traits = {}
+			id = -1
+			desc = POLITICS_WALT_DISNEY_MON_DESC
+		}
+	}
 	DIS_ub_iwerks = {
 		name = "Ub Iwerks"
 		portraits = {

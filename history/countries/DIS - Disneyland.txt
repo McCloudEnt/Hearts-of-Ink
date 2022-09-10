@@ -11,8 +11,9 @@ set_technology = {
 
 set_convoys = 20
 
-recruit_character = DIS_les_clark
+recruit_character = DIS_ronald_reagan
 recruit_character = DIS_marc_davis
+recruit_character = DIS_les_clark
 recruit_character = DIS_milt_kahl
 recruit_character = DIS_eric_larson
 recruit_character = DIS_john_lounsbery
@@ -28,9 +29,9 @@ recruit_character = DIS_jimmie_dodd
 recruit_character = DIS_floyd_gottfredson
 recruit_character = DIS_ken_anderson
 recruit_character = DIS_jack_kinney
-recruit_character = DIS_ronald_reagan
 recruit_character = DIS_ub_iwerks
 recruit_character = DIS_art_babbitt
+recruit_character = DIS_walt_disney
 
 1939.1.1 = {
 	#generic focuses
@@ -76,23 +77,4 @@ set_popularities = {
 	fascism = 25
 	communism = 25
 	neutrality = 25
-}
-
-create_country_leader = {
-	name = "Walt Disney"
-	desc = "POLITICS_WALT_DISNEY_DESC"
-	picture = "portrait_Disney_walt_disney.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Walt Disney"
-	desc = "POLITICS_WALT_DISNEY_DESC"
-	picture = "portrait_Disney_walt_disney.dds"
-	ideology = despotism
-	traits = {
-		#
-	}
 }

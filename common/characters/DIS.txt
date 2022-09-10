@@ -82,21 +82,21 @@ characters = {
 			}
 		}
 	}
-	DIS_les_clark = {
-		name = "Les Clark"
+	DIS_ronald_reagan = {
+		name = "Ronald Reagan"
 		portraits = {
 			army = {
-				small = "GFX_idea_generic_political_advisor_europe_5"
+				small = "GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = DIS_les_clark
+			idea_token = DIS_ronald_reagan
 			allowed = {
 				original_tag = DIS
 			}
 			traits = {
-				ideological_crusader
+				democratic_reformer
 			}
 		}
 	}
@@ -115,6 +115,24 @@ characters = {
 			}
 			traits = {
 				staunch_monarchist
+			}
+		}
+	}
+	DIS_les_clark = {
+		name = "Les Clark"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_les_clark
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				ideological_crusader
 			}
 		}
 	}
@@ -388,21 +406,217 @@ characters = {
 			}
 		}
 	}
-	DIS_ronald_reagan = {
-		name = "Ronald Reagan"
+	DIS_howard_hughes = {
+		name = "Howard Hughes"
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
 		advisor = {
-			slot = political_advisor
-			idea_token = DIS_ronald_reagan
+			slot = theorist
+			idea_token = DIS_howard_hughes
 			allowed = {
 				original_tag = DIS
 			}
 			traits = {
-				democratic_reformer
+				air_warfare_theorist
+			}
+		}
+	}
+	DIS_wernher_von_braun = {
+		name = "Wernher von Braun"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = DIS_wernher_von_braun
+			allowed = {
+				original_tag = DIS
+			}
+			available = {
+				OR = {
+					has_completed_focus = Operation_Paperclip
+					has_completed_focus = German_Advisors
+				}
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
+	}
+	DIS_werner_heisenberg = {
+		name = "Werner Heisenberg"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = DIS_werner_heisenberg
+			allowed = {
+				original_tag = DIS
+			}
+			available = {
+				OR = {
+					has_completed_focus = Operation_Paperclip
+					has_completed_focus = German_Advisors
+				}
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+	DIS_fess_parker = {
+		name = "Fess Parker"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = DIS_fess_parker
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+		}
+	}
+	DIS_joe_fowler = {
+		name = "Joe Fowler"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = DIS_joe_fowler_high
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				navy_capital_ship_2
+				naval_aviation_pioneer
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = DIS_joe_fowler_navy_chief
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+		}
+	}
+	
+	DIS_wolfgang_heitherman = {
+		name = "Wolfgang Heitherman"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = DIS_wolfgang_heitherman_high
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				air_air_superiority_2
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = DIS_wolfgang_heitherman_chief
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+		}
+	}
+	DIS_don_dagradi = {
+		name = "Don Dagradi"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = DIS_don_dagradi
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				army_chief_morale_2
+			}
+		}
+	}
+	DIS_sterling_holloway = {
+		name = "Sterling Holloway"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = DIS_sterling_holloway
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+		}
+	}
+	DIS_richard_irvine = {
+		name = "Richard Irvine"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = DIS_richard_irvine
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+		}
+	}
+	DIS_frank_thomas = {
+		name = "Frank Thomas"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = DIS_frank_thomas
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				air_chief_safety_2
 			}
 		}
 	}

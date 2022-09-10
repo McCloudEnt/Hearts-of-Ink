@@ -32,6 +32,16 @@ recruit_character = DIS_jack_kinney
 recruit_character = DIS_ub_iwerks
 recruit_character = DIS_art_babbitt
 recruit_character = DIS_walt_disney
+recruit_character = DIS_howard_hughes
+recruit_character = DIS_wernher_von_braun
+recruit_character = DIS_werner_heisenberg
+recruit_character = DIS_fess_parker
+recruit_character = DIS_joe_fowler
+recruit_character = DIS_wolfgang_heitherman
+recruit_character = DIS_don_dagradi
+recruit_character = DIS_sterling_holloway
+recruit_character = DIS_richard_irvine
+recruit_character = DIS_frank_thomas
 
 1939.1.1 = {
 	#generic focuses

@@ -2245,7 +2245,29 @@ focus_tree = {
 		x = 21
 		y = 10
 		completion_reward = {
-			annex_country = { target = USA transfer_troops = yes }
+			custom_effect_tooltip = DIS_USA_President_Disney
+			hidden_effect = {
+				USA = {
+					create_country_leader = {
+						name = "Walt Disney"
+						picture = "gfx/leaders/DIS/portrait_Disney_walt_disney.dds"
+						ideology = liberalism
+					}
+					load_focus_tree = {
+						tree = usa_focus
+						keep_completed = no
+					}
+					if = {
+						limit = {
+							date > 1940.1.1
+						}
+						set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+					}
+					else = {
+						set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
+					}
+				}
+			}
 		}
 
 	}

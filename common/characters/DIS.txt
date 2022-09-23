@@ -85,9 +85,19 @@ characters = {
 	DIS_ronald_reagan = {
 		name = "Ronald Reagan"
 		portraits = {
+			civilian = {
+				large = "gfx/leaders/DIS/portrait_Disney_ronald_reagan.dds"
+			}
 			army = {
 				small = "GFX_idea_generic_political_advisor_europe_1"
 			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "2004.6.5.12"
+			traits = {}
+			id = -1
+			desc = POLITICS_RONALD_REAGAN_DESC
 		}
 		advisor = {
 			slot = political_advisor

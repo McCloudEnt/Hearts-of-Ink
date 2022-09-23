@@ -4,7 +4,7 @@ tags={
 	"National Focuses"
 	"Gameplay"
 }
-name="Hearts of Ink - Github Build"
+name="Hearts of Ink"
 picture="thumbnail.png"
 supported_version="1.11.*"
 path="C:/Users/b/Documents/Paradox Interactive/Hearts of Iron IV/mod/Hearts-of-Ink/"

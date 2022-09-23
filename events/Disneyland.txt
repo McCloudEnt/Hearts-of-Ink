@@ -49,3 +49,86 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = disneyland.2
+	title = disneyland.2.t
+	desc = {
+		text = disneyland.2.d
+		trigger = {
+			NOT = {
+				has_completed_focus = Run_For_President
+			}
+		}
+	}
+	desc = {
+		text = disneyland.2.d2
+		trigger = {
+			has_completed_focus = Run_For_President
+		}
+	}
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			remove_ideas = neutrality_influence
+			add_ideas = democratic_influence
+			USA = {
+				if = {
+					limit = {
+						has_country_leader = {
+							name = "Walt Disney"
+							ruling_only = yes
+						}
+					}
+					kill_country_leader = yes
+				}
+				create_country_leader = {
+					name = "Ronald Reagan"
+					picture = "gfx/leaders/DIS/portrait_Disney_ronald_reagan.dds"
+					ideology = liberalism
+				}
+				set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
+				load_focus_tree = {
+					tree = usa_focus
+					keep_completed = no
+				}
+			}
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = disneyland.2.a
+		ai_chance = { factor = 25 }
+	}
+	option = {
+		name = disneyland.2.b
+		ai_chance = { factor = 25 }
+	}
+	option = {
+		name = disneyland.2.c
+		ai_chance = { factor = 25 }
+	}
+	option = {
+		name = disneyland.2.e
+		ai_chance = { factor = 25 }
+	}
+}

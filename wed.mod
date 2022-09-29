@@ -6,6 +6,6 @@ tags={
 }
 name="Hearts of Ink"
 picture="thumbnail.png"
-supported_version="1.11.*"
+supported_version="1.12.*"
 path="C:/Users/b/Documents/Paradox Interactive/Hearts of Iron IV/mod/Hearts-of-Ink/"
 remote_file_id="2506530652"

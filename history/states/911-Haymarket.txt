@@ -1,0 +1,26 @@
+state={
+	id=911
+	name="STATE_911"
+	manpower = 23490
+	
+	state_category = city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+			fuel_silo = 1
+		}
+		add_core_of = DIS
+		victory_points = {
+			951 10
+		}
+
+	}
+
+	provinces={
+		951 873 
+	}
+}

@@ -478,20 +478,20 @@ news_event = {
 	fire_only_once = yes
 
 	trigger = {
-		FROM.FROM = { state = 835 }
+		FROM.FROM = { state = 909 }
 	}
 
 	option = {
 		name = nuke_dropped.14.a
 		trigger = {
-			NOT = { owns_state = 835 }
+			NOT = { owns_state = 909 }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.14.b
 		trigger = {
-			owns_state = 835
+			owns_state = 909
 		}
 	}
 }

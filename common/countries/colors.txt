@@ -1,8 +1,8 @@
 #reload countrycolors
 
 DIS = {
-	color = rgb { 233  231  246 }
-	color_ui = rgb { 233  231  246 }
+	color = rgb { 0 128 128 }
+	color_ui = rgb { 0 128 128 }
 }
 GER = {
 	color = HSV { 0.1 0.15 0.4 }

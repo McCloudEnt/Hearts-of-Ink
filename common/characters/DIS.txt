@@ -146,6 +146,24 @@ characters = {
 			}
 		}
 	}
+	DIS_roy_disney = {
+		name = "Roy Disney"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_roy_disney
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				backroom_backstabber
+			}
+		}
+	}
 	DIS_milt_kahl = {
 		name = "Milt Kahl"
 		portraits = {
@@ -357,8 +375,32 @@ characters = {
 			allowed = {
 				original_tag = DIS
 			}
+			available = {
+				has_completed_focus = Mickey_Mouse_Club
+			}
 			traits = {
 				popular_figurehead
+			}
+		}
+	}
+	DIS_roy_williams = {
+		name = "Roy Williams"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_roy_williams
+			allowed = {
+				original_tag = DIS
+			}
+			available = {
+				has_completed_focus = Mickey_Mouse_Club
+			}
+			traits = {
+				smooth_talking_charmer
 			}
 		}
 	}
@@ -413,6 +455,47 @@ characters = {
 			}
 			traits = {
 				silent_workhorse
+			}
+		}
+	}
+	DIS_gunther_lessing = {
+		name = "Gunther Lessing"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_gunther_lessing
+			allowed = {
+				original_tag = DIS
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits = {
+				anti_communist
+			}
+		}
+	}
+	DIS_rolly_crump = {
+		name = "Rolly Crump"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = DIS_rolly_crump
+			allowed = {
+				original_tag = DIS
+			}
+			traits = {
+				popular_figurehead
 			}
 		}
 	}
